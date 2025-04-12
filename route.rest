@@ -1,0 +1,117 @@
+### api/auth/signup
+POST http://localhost:5000/api/auth/signup
+Content-Type: application/json
+
+{
+    "username" : "mohanprasanth",
+    "email" : "mohan@gmail.com",
+    "fullName" : "user",
+    "password" : "mohangoki"
+}
+
+
+### api/auth/login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username" : "mohanprasanth",
+    "password" : "mohangoki"
+}
+
+
+### api/auth/logout
+POST http://localhost:5000/api/auth/logout
+Content-Type: application/json
+
+
+### api/auth/me
+GET http://localhost:5000/api/auth/me
+Content-Type: application/json
+
+
+### api/users/profile/goki
+GET http://localhost:5000/api/users/profile/mohanprasanth
+Content-Type: application/json
+
+
+### api/users/follow/:id
+POST  http://localhost:5000/api/users/follow/67f0be90e8e0d18137c089c9
+Content-Type: application/json
+
+
+### api/users/suggested
+GET  http://localhost:5000/api/users/suggested
+Content-Type: application/json
+
+
+### api/users/update
+POST   http://localhost:5000/api/users/update
+Content-Type: application/json
+
+{
+    "currentPassword" : "gokimohan",
+    "newPassword" : "gokilaMG"
+}
+
+
+### api/posts/create
+POST   http://localhost:5000/api/posts/create
+Content-Type: application/json
+
+{
+    "text" : "5"
+}
+
+
+### api/posts/:id
+DELETE    http://localhost:5000/api/posts/67f152541e3c614dd3a1cef8
+Content-Type: application/json
+
+
+### api/posts/comment/:id
+POST   http://localhost:5000/api/posts/comment/67f152541e3c614dd3a1cef8
+Content-Type: application/json
+
+{
+    "text" : "im also"
+}
+
+
+### api/posts/like/:id
+POST   http://localhost:5000/api/posts/like/67f168a8db8c67ea980ad5b2
+Content-Type: application/json
+
+
+
+### api/posts/all
+GET    http://localhost:5000/api/posts/all
+Content-Type: application/json
+
+
+### api/posts/likes/:id
+GET    http://localhost:5000/api/posts/likes/67f0be90e8e0d18137c089c9
+Content-Type: application/json
+
+
+### api/posts/following
+GET    http://localhost:5000/api/posts/following
+Content-Type: application/json
+
+
+### api/posts/user/:username
+GET  http://localhost:5000/api/posts/user/mohanprasanth
+Content-Type: application/json
+
+
+
+### api/notifications
+GET  http://localhost:5000/api/notifications
+Content-Type: application/json
+
+
+
+### api/notifications
+DELETE  http://localhost:5000/api/notifications
+Content-Type: application/json
+

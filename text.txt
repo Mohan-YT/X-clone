@@ -1,0 +1,20 @@
+****BACKEND****
+    npm init -y
+    npm i express mongoose dotenv
+    npm i nodemon -D 
+    npm i jsonwebtoken  bcryptjs cors cookie-parser cloudinary
+
+    //genarate JWT secret key --> run Terminal
+    node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+
+****FRONTEND****
+ npm create vite@latest
+ project name : .  <-- "." is create next app in current directory
+ select framework : react
+ select varient : javascript
+ npm install
+ npm install tailwindcss @tailwindcss/vite
+ npm i -D daisyui@latest
+ npm install react-router-dom
+ npm i @tanstack/react-query
+ npm install react-hot-toast

@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Register theme tokens that Tailwind understands */
+@theme {
+  --color-bg: #ffffff;
+  --color-text: #F5F5F5;
+  --color-primary: #1DA1F2;
+  --color-secondary:#D3D3D3;
+  --breakpoint-lmd:450px;
+  --breakpoint-llg:600px;
+  --color-skeleton:#bdbdbd30;
+  --color-border:#001c3d9a;
+  --color-borderB:#adadae9a;
+}
+
+/* Light theme values */
+[data-theme='light'] {
+  --color-bg: #FFFFFF;
+  --color-text: black;
+  --color-primary: #1DA1F2;
+  --color-secondary:#212121;
+  --color-skeleton:#d0cece5b;
+  --color-border:#021d3b9a;
+  --color-borderB:#adadae9a;
+}
+
+/* Black (dark) theme values */
+[data-theme='black'] {
+  --color-bg: black;
+  --color-text: #F5F5F5 ;
+  --color-primary: #1DA1F2;
+  --color-secondary:#D3D3D3;
+  --color-skeleton:#bdbdbd30;
+  --color-border:#0069a2c9;
+  --color-borderB:#535252cc;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
